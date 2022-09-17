@@ -1,0 +1,22 @@
+service: express-app-lambda
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: true
+          private: true
+      - http:
+          path: /{any+}
+          method: ANY
+          cors: true
+          private: true
