@@ -7,8 +7,8 @@
 2) Now you can create your API Gateway. I used the Rest API for this but I'm sure HTTP API would work as well.
 
 3) You need to add a resource on your API Gateway on the root path. Be sure to check the boxes for configure as proxy resource and enable API Gateway CORS. Then you need to link this resource to the lambda function that we created earlier.
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/49013231/206956849-6aaa5844-17c9-4d69-9213-7408c259c2c7.png">
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/49013231/206956880-14b1ecd5-2052-4b8c-b2f3-3413ec2510b9.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/49013231/206956849-6aaa5844-17c9-4d69-9213-7408c259c2c7.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/49013231/206956880-14b1ecd5-2052-4b8c-b2f3-3413ec2510b9.png">
 
 
 4) Now that we finished creating all of our API Gateway changes we need to go and deploy the API so we can test it.
