@@ -2,15 +2,15 @@
 
 ## Create Lambda function and API Gateway
 1) First create your lambda function. You can upload this code by selecting the content of directory and compressing it. Lambda allows you to take this zip file and upload it.
-<img width="931" alt="image" src="https://user-images.githubusercontent.com/49013231/206956927-e444d463-4138-487f-bce5-d5b9117daeae.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/49013231/206956927-e444d463-4138-487f-bce5-d5b9117daeae.png">
 
 2) Now you can create your API Gateway. I used the Rest API for this but I'm sure HTTP API would work as well.
 
 3) You need to add a resource on your API Gateway on the root path. Be sure to check the boxes for configure as proxy resource and enable API Gateway CORS. Then you need to link this resource to the lambda function that we created earlier.
-<img width="989" alt="image" src="https://user-images.githubusercontent.com/49013231/206956849-6aaa5844-17c9-4d69-9213-7408c259c2c7.png">
-<img width="936" alt="image" src="https://user-images.githubusercontent.com/49013231/206956880-14b1ecd5-2052-4b8c-b2f3-3413ec2510b9.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/49013231/206956849-6aaa5844-17c9-4d69-9213-7408c259c2c7.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/49013231/206956880-14b1ecd5-2052-4b8c-b2f3-3413ec2510b9.png">
 
 
 4) Now that we finished creating all of our API Gateway changes we need to go and deploy the API so we can test it.
-<img width="485" alt="image" src="https://user-images.githubusercontent.com/49013231/206956693-e1685897-72b4-42e5-a563-2959d418c4de.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/49013231/206956693-e1685897-72b4-42e5-a563-2959d418c4de.png">
 
