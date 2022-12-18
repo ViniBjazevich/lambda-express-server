@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "DEVELOPMENT=true nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,8 @@
     "express": "^4.18.1",
     "pg": "^8.8.0",
     "serverless-http": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
