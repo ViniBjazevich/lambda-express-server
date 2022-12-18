@@ -1,31 +1,25 @@
 const serverless = require("serverless-http");
 const express = require("express");
 const app = express();
-
 const artistsRouter = require("./routes/artists");
 
 app.use(express.json());
 
-app.use("/artists", artistsRouter);
-
-app.get("/", (req, res) => {
+// creating routes
+app.get("/api", (req, res) => {
   res.send("Hello world!");
 });
 
-app.get("/vini", (req, res) => {
-  res.send("This is Vini!!!");
-});
-
-app.get("/bolt", (req, res) => {
-  res.send("This is Bolt!!!");
-});
-
-app.post("/signup", (req, res) => {
+app.post("/api", (req, res) => {
   const { name } = req.body;
 
-  res.json(`Hello there ${name}`);
+  res.json(`Hello there ${name}!`);
 });
 
+// using routers
+app.use("/artists", artistsRouter);
+
+// to run and test locally
 if (process.env.DEVELOPMENT) {
   const PORT = 3000;
 
