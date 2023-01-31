@@ -1,5 +1,16 @@
 # How to create a serverless express app:
 
+## Important thing to know:
+- Make sure you have your index.js file in the root of your projects directory. If this isn't here the Lambda function will throw an error.
+- Make sure you don't use the base route in your express server. HTTP requests to this base route will not be sent to our proxy Lambda.
+
+### Example:
+#### Will not work
+http://supercoolapigatewayurl.com/stageName
+
+#### Will work
+http://supercoolapigatewayurl.com/stageName/todos
+
 ## Create Lambda function and API Gateway
 1) First create your lambda function. You can upload this code by selecting the content of directory and compressing it. Lambda allows you to take this zip file and upload it.
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/49013231/206956927-e444d463-4138-487f-bce5-d5b9117daeae.png">
